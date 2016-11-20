@@ -1,0 +1,233 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: transparent;
+	min-height: 100%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	line-height: 1.5em;
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff;
+	color: rgba(255, 255, 255, .8);
+	font-weight: normal;
+}
+
+/********************************************************/
+/*                Bootstrap Carousel                    */
+/********************************************************/
+.carousel, .item, .active {
+	height: 100%;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+.fill {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	margin: 0;
+	padding: 0px;
+}
+
+/* faster sliding speed */
+.carousel-inner>.item {
+	-webkit-transition: 0.3s ease-in-out left;
+	-moz-transition: 0.3s ease-in-out left;
+	-o-transition: 0.3s ease-in-out left;
+	transition: 0.3s ease-in-out left;
+}
+
+/* keep full widget on smaller screens */
+@media ( max-width : 767px) {
+	body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.glyphicon {
+	font-size: 30px;
+}
+
+/********************************************************/
+/*                    Navigation bar                    */
+/********************************************************/
+.navbar {
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 0px;
+	padding: 15px 0 15px 0;
+}
+
+nav.navbar-findcond {
+	clear: both;
+	background: #fff;
+	border-color: #ccc;
+	box-shadow: 0 0 2px 0 #ccc;
+}
+
+nav.navbar-findcond a {
+	color: #f14444;
+}
+
+nav.navbar-findcond ul.navbar-nav a {
+	color: #f14444;
+	border-style: solid;
+	border-width: 0 0 2px 0;
+	border-color: #fff;
+}
+
+nav.navbar-findcond ul.navbar-nav a:hover, nav.navbar-findcond ul.navbar-nav a:visited,
+	nav.navbar-findcond ul.navbar-nav a:focus, nav.navbar-findcond ul.navbar-nav a:active
+	{
+	background: #fff;
+}
+
+nav.navbar-findcond ul.navbar-nav a:hover {
+	border-color: #f14444;
+}
+
+nav.navbar-findcond li.divider {
+	background: #ccc;
+}
+
+nav.navbar-findcond button.navbar-toggle {
+	background: #f14444;
+	border-radius: 2px;
+}
+
+nav.navbar-findcond button.navbar-toggle:hover {
+	background: #999;
+}
+
+nav.navbar-findcond button.navbar-toggle>span.icon-bar {
+	background: #fff;
+}
+
+nav.navbar-findcond ul.dropdown-menu {
+	border: 0;
+	background: #fff;
+	border-radius: 4px;
+	margin: 4px 0;
+	box-shadow: 0 0 4px 0 #ccc;
+}
+
+nav.navbar-findcond ul.dropdown-menu>li>a {
+	color: #444;
+}
+
+nav.navbar-findcond ul.dropdown-menu>li>a:hover {
+	background: #f14444;
+	color: #fff;
+}
+
+nav.navbar-findcond span.badge {
+	background: #f14444;
+	font-weight: normal;
+	font-size: 11px;
+	margin: 0 4px;
+}
+
+nav.navbar-findcond span.badge.new {
+	background: rgba(255, 0, 0, 0.8);
+	color: #fff;
+}
+
+@media ( min-width : 992px) {
+	.navbar li {
+		font-weight: 500;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+}
+
+.navbar.navbar-default .navbar-collapse {
+	border: none;
+	box-shadow: none;
+}
+
+.navbar-brand {
+	font-weight: 400;
+	font-size: 50px;
+	font-family: 'Wire One', Helvetica, Arial, sans-serif;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+/********************************************************/
+/*                   UI - Theme invert                  */
+/********************************************************/
+.btn {
+	color: #333;
+	text-shadow: none;
+	text-decoration: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 0 none;
+}
+
+.btn:hover {
+	color: #000;
+}
+
+.btn-lg {
+	padding: 16px 30px;
+	font-size: inherit;
+}
+
+.theme-invert {
+	color: #222;
+	color: rgba(0, 0, 0, .8);
+}
+
+.theme-invert a {
+	color: #000;
+}
+
+.theme-invert .btn {
+	color: rgba(255, 255, 255, .8);
+}
+
+.theme-invert .btn:hover {
+	color: #fff;
+}
+
+.theme-invert .btn-link {
+	color: rgba(0, 0, 0, .8);
+}
+
+.theme-invert .btn-link:hover, .theme-invert .btn-link:focus,
+	.theme-invert .btn-link:active {
+	color: #000
+}
+
+.theme-invert .btn-default {
+	background: rgba(0, 0, 0, .4);
+}
+
+.theme-invert .btn-default:hover, .theme-invert .btn-default:focus,
+	.theme-invert .btn-default:active, .theme-invert .btn-default.active {
+	background: rgba(0, 0, 0, .6);
+	color: #fff;
+}
+
+.theme-invert .btn-primary {
+	background: rgba(0, 0, 0, .2);
+}
+
+.theme-invert .btn-primary:hover, .theme-invert .btn-primary:focus,
+	.theme-invert .btn-primary:active, .theme-invert .btn-primary.active {
+	background: rgba(0, 0, 0, .3);
+	color: #fff;
+}
